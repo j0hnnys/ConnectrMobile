@@ -2,19 +2,46 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:tools="http://schemas.android.com/tools"
               android:orientation="vertical"
+              android:id="@+id/background_layout"
+              android:background="@drawable/main_screen_2"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/header"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:src="@drawable/load_1"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="Today's Trending"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
     <ImageView
-        android:src="@android:drawable/presence_audio_online"
-        android:layout_gravity="top|right"
-        android:layout_width="200dp"
-        android:layout_height="200dp"/>
-    
+        android:id="@+id/spinning_logo"
+        android:layout_marginTop="600dp"
+        android:layout_gravity="center"
+        android:src="@drawable/spinning_load"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
     <FrameLayout
         android:id="@+id/alexa_fragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout="@layout/list_item_twitter_tweets"/>
+        android:layout_height="match_parent"/>
 
 </LinearLayout>
