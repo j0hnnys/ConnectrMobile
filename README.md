@@ -7,6 +7,7 @@ We made it possible so that Alexa can send top trending Twitter data to our mobi
 do is say "Alexa, get me latest twitter trends" and the everything else will be taken care of for you. All the hard work is done behind
 the scenes making it easy and intuitive for the user.
 
-
+<img src=screenshots/splash_screen.png width=300 height=500 /> <img src=screenshots/voice_screen.png width=300 height=500 />
+<img src=screenshots/twitter_screen.png width=300 height=500 />
 
 
